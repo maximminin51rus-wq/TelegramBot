@@ -1,9 +1,7 @@
 import telebot
 import random
 import os
-
-# Вставь свой токен
-TOKEN = 'ТВОЙ_ТОКЕН_ЗДЕСЬ'
+TOKEN = os.getenv('BOT_TOKEN')
 bot = telebot.TeleBot(TOKEN)
 FILE_NAME = "games.txt"
 
